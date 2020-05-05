@@ -61,6 +61,73 @@ const btn = document.querySelector('button');
 btn.textContent = siteContent.cta.button;
 
 
-const fh4 = document.querySelector('main-content h4:nth-child(1)');
-fh4.textContent = siteContent["main-content"["features-h4"]];
+const fh4 = document.querySelector(".top-content h4:nth-child(1)");
+fh4.textContent = siteContent["main-content"]["features-h4"];
 
+const fp = document.querySelector(".top-content p:nth-child(2)");
+fp.textContent = siteContent["main-content"]["features-content"];
+
+const ah4 = document.querySelector(".top-content h4:nth-child(3)");
+ah4.textContent = siteContent["main-content"]["about-h4"];
+
+const ap = document.querySelector(".top-content p:nth-child(4)");
+ap.textContent = siteContent["main-content"]["about-content"];
+
+const sh4 = document.querySelector(".bottom-content h4:nth-child(1)");
+sh4.textContent = siteContent["main-content"]["services-h4"];
+
+const sp = document.querySelector(".bottom-content p:nth-child(2)");
+sp.textContent = siteContent["main-content"]["services-content"];
+
+const ph4 = document.querySelector(".bottom-content h4:nth-child(3)");
+ph4.textContent = siteContent["main-content"]["product-h4"];
+
+const pp = document.querySelector(".bottom-content p:nth-child(4)");
+pp.textContent = siteContent["main-content"]["product-content"]
+
+const vh4 = document.querySelector(".bottom-content h4:nth-child(5)");
+vh4.textContent = siteContent["main-content"]["vision-h4"];
+
+const vp = document.querySelector(".bottom-content p:nth-child(6)");
+vp.textContent = siteContent["main-content"]["vision-content"];
+
+
+const ch4 = document.querySelector(".contact h4:nth-child(1)");
+ch4.textContent = siteContent["contact"]["contact-h4"];
+
+const caddress = document.querySelector(".contact p:nth-child(2)");
+caddress.textContent = siteContent["contact"]["address"];
+
+const cphone = document.querySelector(".contact p:nth-child(3)");
+cphone.textContent = siteContent["contact"]["phone"];
+
+const cemail = document.querySelector(".contact p:nth-child(4)");
+cemail.textContent = siteContent["contact"]["email"];
+
+const foot = document.querySelector('p');
+foot.textContent = siteContent.footer.copyright;
+
+const navA = document.querySelectorAll('a')
+navA.forEach(link => link.style.color = 'green');
+
+const link1 = {
+  href: '#',
+  textContent: 'Help',
+}
+
+const link2 = {
+  href: '#',
+  textContent: 'Fun',
+}
+
+const newLink1 = document.createElement('a');
+const newLink2 = document.createElement('a');
+
+newLink1.href = link1.href;
+newLink1.textContent = link1.textContent;
+
+newLink2.href = link2.href;
+newLink2.textContent = link2.textContent;
+
+nav.appendChild(newLink1);
+nav.appendChild(newLink2);
